@@ -1,0 +1,202 @@
+/* Place all custom styles in this file */
+
+@font-face {
+  font-family: 'JSansBold';
+  src: url('../fonts/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'JSansBoldItalic';
+  src: url('../fonts/JosefinSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'JSansItalic';
+  src: url('../fonts/JosefinSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'JSansLight';
+  src: url('../fonts/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'JSansLightItalic';
+  src: url('../fonts/JosefinSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'JSansRegular';
+  src: url('../fonts/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'JSansSemiBold';
+  src: url('../fonts/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'JSansThin';
+  src: url('../fonts/JosefinSans-Thin.ttf') format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'JSansThinItalic';
+  src: url('../fonts/JosefinSans-ThinItalic.ttf') format('truetype');
+  font-weight: 200;
+}
+
+body, html {
+  font-family: 'JSansRegular', sans-serif;
+  font-weight: 400;
+  background: #f62929!important;
+  color: #eeeeee;
+}
+
+* { outline: none; }
+
+.red { color: #f62929!important; }
+.white { color: #fff!important; }
+.thin { font-weight: 400!important; font-family: 'JSansRegular', sans-serif; }
+.bold { font-weight: 700!important; font-family: 'JSansSemiBold', sans-serif; }
+.center { text-align: center!important; }
+img { max-width: 100%; }
+
+.content {
+  padding: 15px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.home-logo { width: 80%; max-width: 300px; margin-left: auto; margin-right: auto; margin-top: 40px; }
+.home-logo img { margin-bottom: 14px; }
+.home-logo .app-name { font-size: 45px; }
+
+.swipeText { 
+  margin-top: 5px; font-size: 20px; color: #ddd; 
+}
+
+.occupationSelection { display: block; background: rgba(0,0,0,.1); padding: 5px 10px; border-radius: 3px; margin-bottom: 2px; font-size: 20px; }
+.occupationSelection.selected { background: #fff; color: #f62929; }
+
+@media(max-width: 265px) {
+  .home-logo .app-name { font-size: 24px; }
+}
+
+.information input {
+  background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.12);
+  color: #FFF;
+  border: 0px none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 10px 16px;
+  height: 40px;
+}
+
+.information button.saveUserBtn {
+  background: none repeat scroll 0% 0% transparent;
+  display: block;
+  width: 100%;
+  border: 2px solid #FFF;
+  border-radius: 22px;
+  padding: 6px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+::-webkit-input-placeholder {
+  color: rgba(255,255,255,0.4)!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,0.4)!important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: rgba(255,255,255,0.4)!important;  
+}
+
+:-ms-input-placeholder {  
+  color: rgba(255,255,255,0.4)!important;  
+}
+
+#map-canvas {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-slider {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.device .arrow-left {
+  background: url(img/arrows.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+}
+.device .arrow-right {
+  background: url(img/arrows.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+}
+.swiper-container {
+  height: 100vh;
+  width: 100vw;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100vw;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}

@@ -1,0 +1,60 @@
+/* Place all custom styles in this file */
+
+body, html {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	background: #f62929!important;
+	color: #eeeeee;
+}
+
+* { outline: none; }
+
+.red { color: #f62929; }
+.white { color: #fff; }
+.thin { font-weight: 300; }
+.bold { font-weight: 700; }
+
+.btn {
+	-webkit-appearance: none;
+	outline: none;
+	box-shadow: none !important;
+	background: transparent!important;
+}
+
+.btn:hover, .btn:focus {
+	background: rgba(0,0,0,.05)!important;
+	color: #fff;
+	outline: none;
+}
+
+.btn-lg {
+	border-radius: 22px;
+	padding: 10px 35px;
+}
+
+.btn-md {
+	border-radius: 18px;
+	padding: 8px 30px;
+	height: 37px;
+}
+
+.btn-sm {
+	border-radius: 14px;
+	padding: 4px 18px;
+	height: 28px;
+}
+
+.btn-red, .btn-red:hover, .btn-red:focus {
+	border: 2px solid #f62929;
+	color: #f62929;
+}
+
+.btn-white, .btn-white:hover {
+	border: 2px solid #fff;
+	color: #fff;
+}
+
+#map-canvas { 
+	height: 100vh;
+	width: 100vw;
+}
